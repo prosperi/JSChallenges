@@ -16,9 +16,9 @@ output.innerHTML += pyramid;
 
 ///////// Challenge 2
 for(var i = 0; i < 100; i++){
-  if(i%3==0 && i%5==0) console.log("FizzBuzz");
-  else if(i%3==0) console.log("Fizz");
-  else if(i%5==0) console.log("Buzz");
+  if(i%3===0 && i%5===0) console.log("FizzBuzz");
+  else if(i%3===0) console.log("Fizz");
+  else if(i%5===0) console.log("Buzz");
 }
 
 ///////// Challenge 3
@@ -27,10 +27,10 @@ var board = "";
 
 for(var i = 0; i < size; i++){
   for(var j = 0; j< size; j++){
-    if(i%2==0){
-      (j%2==0) ? board += "#" : board += "&nbsp;";
+    if(i%2===0){
+      (j%2===0) ? board += "#" : board += "&nbsp;";
     }else{
-      (j%2==0) ? board += "&nbsp;" : board += "#";
+      (j%2===0) ? board += "&nbsp;" : board += "#";
     }
   }
   board += "<br/>";
