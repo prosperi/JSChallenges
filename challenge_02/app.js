@@ -1,4 +1,4 @@
-var output = document.getElementsByTagName("code")[0];
+var OUTPUT = document.getElementsByTagName("code")[0];
 
 
 ////////// Challenge 1
@@ -17,7 +17,7 @@ function isEven(a){
   if(a > 1)
     return isEven(a-2);
   else
-    return a==0;
+    return a===0;
 }
 
 console.log(isEven(11));
@@ -26,7 +26,7 @@ console.log(isEven(11));
 function countChar(str, chr){
   var count = 0;
   for(var i=0; i<str.length; i++){
-    if(str.charAt(i) == chr) count++;
+    if(str.charAt(i) === chr) count++;
   }
   return count;
 }
